@@ -1,0 +1,81 @@
+<html>
+  <head>
+  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+  <script type='text/javascript'>
+   google.load('visualization', '1', {'packages': ['geochart']});
+   google.setOnLoadCallback(drawRegionsMap);
+   
+    function drawRegionsMap() {
+    var data = google.visualization.arrayToDataTable([
+      ['Country', 'underschool'],
+          ['Argentina', 36.359135],
+          ['Australia', 18.108641],
+          ['Belgium', 21.773218],
+          ['Canada', 8.3779144],
+          ['Colombia', 44.813713],
+          ['Costa Rica', 60.770302],
+          ['Czech Republic', 6.1394086],
+          ['Denmark', 19.070833],
+          ['Estonia', 10.810427],
+          ['Finland', 10.926194],
+          ['France', 20.640024],
+           ['Germany', 13.324821],
+           ['United Kingdom', 20.707432],
+           ['Greece', 26.630527],
+           ['Hungary', 15.138174],
+           ['Iceland', 22.127008],
+           ['Italy', 38.252495],
+           ['Korea', 11.811645],
+           ['Latvia', 12.368318],
+            ['Lithuania', 7.0224643],
+             ['Luxembourg', 22.764822],
+              ['Mexico', 60.853703],
+               ['Netherlands', 20.976793],
+                ['New Zealand', 19.542797],
+                ['Norway', 17.522373],
+                 ['Poland', 7.5521989],
+                 ['Puerto Rico', 50.189827],
+                 ['Slovakia', 8.4211197],
+                 ['Slovenia', 11.862703],
+                 ['South Africa', 25.827738],
+                 ['Spain', 39.884182],
+                 ['Sweden', 16.78861],
+                  ['Switzerland', 11.598805],
+                  ['Turkey', 59.763054],
+                  ['United States', 9.1761637]
+    ]);
+
+    var options = {};
+
+    var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  };
+
+  </script>
+ <!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ページタイトル</title>
+<!--CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<!--JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!--自作CSS -->
+<style type="text/css"><!--
+/*ここに調整CSS記述*/
+--></style>
+
+  <body>
+  <div align="center">
+  <p>最終学歴が中学校以下の割合(国別）</p>
+</div>
+
+  <div id="chart_div" style="width: 100%%; height: 100%%;"></div>
+  <div align="center">
+  <p>出典：OECD 2018</p>
+  </body>
+</html>
