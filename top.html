@@ -1,0 +1,69 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                        <h3>データを可視化</h3>
+                        <p class="lead mb-0">様々なデータをビジュアライゼーションし、グラフで提示</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-layers m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                        <h3>SDGS</h3>
+                        <p class="lead mb-0">地球温暖化、貧富の差など、SDGSに関連したデータを集約</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                        <h3>課題を見つける</h3>
+                        <p class="lead mb-0">現在の課題は持続可能性の社会を作るだけでなく、ビジネスのヒントに</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;static/img/bg-showcase-1.jpg&quot;);"><span></span><img src="static/img/publicdomainq-0019729sut.jpg"></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>データのジャングルを探検しよう！</h2>
+                    <h6>日本、世界のデータからFACTFULNESSとは何かがわかる</h6>
+                    <p class="lead mb-0"></p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col"><img src="/static/img/sdg_poster_ja.png"></div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col">
+                    <p class="text-center">It is not in the stars to hold our destiny but in ourselves.<br>運命は星が決めるのではない，我々の思いが決めるのだ。&nbsp; シェイクスピア<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div align="center">
+        <a href="earth"><img src="static/img/1.jpg" width="40%" height="40%"/></a> <a href="ondo"><img src="static/img/2.jpg" width="40%" height="40%"/></a>
+        <a href="sekai"><img src="static/img/3.jpg" width="40%" height="40%"/></a><a href="heatmap"><img src="static/img/4.jpg" width="40%" height="40%"/></a>
+        <a href="hinkon"><img src="static/img/5.jpg" width="40%" height="40%"/></a> <a href="japanmap"><img src="static/img/6.jpg" width="40%" height="40%"/></a>
+            </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/js/bs-init.js"></script>
+</body>
+
+{% endblock %}
+
+</html>
